@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: widget-service
+  cloud:
+    consul:
+      host: ${CONSUL_SERVER_URL:localhost}
+      port: 8500
+      config:
+        fail-fast: true
+        format: yaml
